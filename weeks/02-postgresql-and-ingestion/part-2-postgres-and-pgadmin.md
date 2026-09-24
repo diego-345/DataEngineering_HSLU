@@ -27,10 +27,10 @@ cd examples/nyc-taxi
 
 All remaining terminal commands assume this working directory.
 
-Copy `.env.example` to `.env` once. On macOS/Linux:
+Copy `.env` to `.env` once. On macOS/Linux:
 
 ```sh
-cp .env.example .env
+cp .env .env
 ```
 
 In Windows PowerShell:

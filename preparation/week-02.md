@@ -29,12 +29,12 @@ Open a terminal at the repository root, then run:
 cd examples/nyc-taxi
 ```
 
-**Ready when:** this directory contains `compose.yaml` and `.env.example`. All commands below run here.
+**Ready when:** this directory contains `compose.yaml` and `.env`. All commands below run here.
 
 ## 3. Download the two application images
 
 ```sh
-docker compose --env-file .env.example pull postgres pgadmin
+docker compose --env-file .env pull postgres pgadmin
 ```
 
 This downloads the packaged applications specified in `compose.yaml`. It does not start them, create database tables, or run ingestion. `--env-file .env.example` supplies example settings so Docker can read the configuration; you do not need to set up real lab passwords now. We will create your own `.env` in class.
@@ -106,7 +106,7 @@ The inspection script will read the January file without deleting or downloading
 Keep Docker Desktop/the Docker engine running. From `examples/nyc-taxi`, run:
 
 ```sh
-docker compose --env-file .env.example build ingest
+docker compose --env-file .env build ingest
 ```
 
 This downloads the Python base image, installs the ingestion libraries, and copies the scripts into an image. It does not start PostgreSQL or run ingestion. The example settings let Compose read the configuration without creating your own `.env` yet.

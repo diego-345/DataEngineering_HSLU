@@ -27,10 +27,10 @@ Start Docker. From the repository root:
 cd weeks/05-workflow-orchestration
 ```
 
-Copy `.env.example` to `.env` in this folder. On macOS/Linux:
+Copy `.env` to `.env` in this folder. On macOS/Linux:
 
 ```sh
-cp .env.example .env
+cp .env .env
 ```
 
 On Windows PowerShell:
@@ -103,7 +103,7 @@ The named volumes `kestra_db` and `kestra_files` preserve the metadata and files
 | Problem | What to check |
 |---|---|
 | Docker connection error | Start Docker Desktop/the Docker engine. |
-| A required setting is missing | Confirm `.env` exists in this folder and contains the four settings from `.env.example`. |
+| A required setting is missing | Confirm `.env` exists in this folder and contains the four settings from `.env`. |
 | Port 8080 is already in use | Set `KESTRA_PORT=18080` in `.env`, run `docker compose up -d` again, and open `http://localhost:18080`. |
 | Login fails | Use the Kestra login from this folder's `.env`, not the pgAdmin login. After changing settings, rerun `docker compose up -d`. |
 | Browser cannot connect | Inspect `docker compose ps` and `docker compose logs --tail 100 kestra`. |

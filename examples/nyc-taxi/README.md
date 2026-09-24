@@ -8,7 +8,7 @@ This example provides PostgreSQL and pgAdmin. [Part 3: Python ingestion](../../w
 
 Requirements: a running Docker engine and Docker Compose v2 with support for `up --wait`. Docker Desktop includes both. Use a terminal in this directory.
 
-1. Copy `.env.example` to `.env` (only on first setup), and edit both passwords. The root `.gitignore` excludes `.env`.
+1. Copy `.env` to `.env` (only on first setup), and edit both passwords. The root `.gitignore` excludes `.env`.
 2. Validate and start the services:
 
 ```sh

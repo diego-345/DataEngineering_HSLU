@@ -4,6 +4,7 @@
     <content url="file://$MODULE_DIR$/examples/nyc-taxi">
       <excludeFolder url="file://$MODULE_DIR$/examples/nyc-taxi/.venv" />
     </content>
+    <orderEntry type="jdk" jdkName="~\Documents\GitHub\DataEngineering_HSLU\examples\nyc-taxi\.venv" jdkType="Python SDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>
